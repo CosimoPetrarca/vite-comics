@@ -10,4 +10,5 @@ export default {
 <template>
     <div>Spazio Main</div>
 </template>
-<style scoped></style>
+<style lang="scss" scoped >
+</style>
