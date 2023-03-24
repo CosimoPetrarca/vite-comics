@@ -2,7 +2,40 @@
 export default {
     data() {
         return {
-            name: 'FooterInfo'
+            name: 'FooterInfo',
+            comics: [
+                "Characters",
+                "Comics",
+                "Movies",
+                "TV",
+                "Games",
+                "Videos",
+                "News"
+            ],
+            shop: [
+                "Shop DC",
+                "Shop DC Collectibles"
+            ],
+            dc: [
+                "Terms Of Use",
+                "Privacy policy (New)",
+                "Ad Choices",
+                "Advertising",
+                "Jobs",
+                "Subscriptions",
+                "Talent Workshops",
+                "CPSC Certificates",
+                "Ratings",
+                "Shop Help",
+                "Contact Us"
+            ],
+            sites: [
+                "DC",
+                "MAD Magazine",
+                "DC Kids",
+                "DC Universe",
+                "DC Power Visa"
+            ]
         }
     }
 }
@@ -15,46 +48,25 @@ export default {
                 <div>
                     <h4>DC COMICS</h4>
                     <ul>
-                        <li>Comics</li>
-                        <li>Comics</li>
-                        <li>Comics</li>
-                        <li>Comics</li>
-                        <li>Comics</li>
-                        <li>Comics</li>
-                        <li>Comics</li>
+                        <li v-for="comic in comics"><a href="#">{{ comic }}</a></li>
                     </ul>
 
                     <h4 class="uno">SHOP</h4>
                     <ul>
-                        <li>Shop</li>
-                        <li>Shop</li>
+                        <li v-for="shop in shop"><a href="#">{{ shop }}</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <h4>DC</h4>
                     <ul>
-                        <li>Jobs</li>
-                        <li>Jobs</li>
-                        <li>Jobs</li>
-                        <li>Jobs</li>
-                        <li>Jobs</li>
-                        <li>Jobs</li>
-                        <li>Jobs</li>
-                        <li>Jobs</li>
-                        <li>Jobs</li>
-                        <li>Jobs</li>
-                        <li>Jobs</li>
+                        <li v-for="dc in dc"><a href="#">{{ dc }}</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4>SITIES</h4>
                     <ul>
-                        <li>Kids</li>
-                        <li>Kids</li>
-                        <li>Kids</li>
-                        <li>Kids</li>
-                        <li>Kids</li>
+                        <li v-for="site in sites"><a href="#">{{ site }}</a></li>
                     </ul>
                 </div>
             </div>
@@ -100,9 +112,14 @@ section {
         padding-bottom: 20px;
     }
 
-    ul {
+    li{
         list-style: none;
+        padding-bottom: 5px;
+    }
+
+    a{
         color: gray;
+        text-decoration: none;
     }
 
     .uno {
