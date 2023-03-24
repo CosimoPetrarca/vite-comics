@@ -2,7 +2,29 @@
 export default {
     data() {
         return {
-            name: 'FooterSocial'
+            name: 'FooterSocial',
+            socials: [
+                {
+                    social: 'Facebook',
+                    image: 'src/assets/footer-facebook.png',
+                },
+                {
+                    social: 'Twitter',
+                    image: 'src/assets/footer-twitter.png',
+                },
+                {
+                    social: 'YouTube',
+                    image: 'src/assets/footer-youtube.png',
+                },
+                {
+                    social: 'Pinterest',
+                    image: 'src/assets/footer-pinterest.png',
+                },
+                {
+                    social: 'Periscope',
+                    image: 'src/assets/footer-periscope.png',
+                }
+            ]
         }
     }
 }
@@ -15,12 +37,9 @@ export default {
             </div>
             <div class="social">
                 <h4>FOLLOW US</h4>
-                <ul>
-                    <li>Social</li>
-                    <li>Social</li>
-                    <li>Social</li>
-                    <li>Social</li>
-                    <li>Social</li>
+                <ul v-for="social in socials">
+                    <li><img :src= social.image></li>
+                   
                 </ul>
             </div>
         </div>
@@ -44,6 +63,7 @@ section {
         background-color: #303030;
         color: white;
         font-size: 20px;
+        cursor: pointer;
     }
 
     .btn,
