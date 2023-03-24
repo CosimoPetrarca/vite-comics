@@ -39,7 +39,7 @@ div {
 
     img {
         color: white;
-        width: 50px;
+        width: 60px;
         height: 50px;
         padding: 0 10px;
     }

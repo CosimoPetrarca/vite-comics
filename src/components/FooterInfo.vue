@@ -67,6 +67,8 @@ export default {
 <style lang="scss" scoped >
 section {
     background-image: url(../assets/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     width: 100%;
 
