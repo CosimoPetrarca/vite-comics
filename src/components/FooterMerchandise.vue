@@ -6,27 +6,27 @@ export default {
             icons: [
                 {
                     text: "DIGITAL COMICS",
-                    img: "../assets/buy_1.png"
+                    img: "src/assets/buy_1.png"
 
                 },
                 {
                     text: "DC MERCHANDISE",
-                    img: "../assets/buy-comics-merchandise.png"
+                    img: "src/assets/buy-comics-merchandise.png"
 
                 },
                 {
                     text: "SUBSCRIPTION",
-                    img: "../assets/buy-comics-subscriptions.png"
+                    img: "src/assets/buy-comics-subscriptions.png"
 
                 },
                 {
                     text: "COMIC SHOP LOCATOR",
-                    img: "../assets/buy-comics-shop-locator.png"
+                    img: "src/assets/buy-comics-shop-locator.png"
 
                 },
                 {
                     text: "DC POWER VISA",
-                    img: "../assets/buy-dc-power-visa.svg"
+                    img: "src/assets/buy-dc-power-visa.svg"
 
                 }
             ]
@@ -40,7 +40,7 @@ export default {
     <section>
         <div class="container">
             <ul>
-                <li v-for="icon in icons"><img :src="icon['img']" >{{ icon.text }}</li>
+                <li v-for="icon in icons"><img :src= icon.img>{{ icon.text }}</li>
             </ul>
         </div>
     </section>
@@ -70,9 +70,9 @@ section {
 
     img {
         color: white;
+        padding: 0 10px;
         width: 60px;
         height: 50px;
-        padding: 0 10px;
     }
 
 }
