@@ -1,8 +1,21 @@
 <script>
 export default {
+    
     data() {
         return {
-            name: 'Header'
+            name: 'Header',
+            navbar: [
+                'Characters',
+                'Comics',
+                'Movies',
+                'TV',
+                'Games',
+                'Collectibles',
+                'Videos',
+                'Fans',
+                'News',
+                'Shop'
+            ]
         }
     }
 }
@@ -14,57 +27,41 @@ export default {
         <div class="lista">
             <!-- lista header -->
             <ul>
-                <li><a href="#">Character</a></li>
-                <li><a href="#">Character</a></li>
-                <li><a href="#">Character</a></li>
-                <li><a href="#">Character</a></li>
-                <li><a href="#">Character</a></li>
-                <li><a href="#">Character</a></li>
-                <li><a href="#">Character</a></li>
-                <li><a href="#">Character</a></li>
-                <li><a href="#">Character</a></li>
-                <li><a href="#">Character</a></li>
+                <li v-for="item in navbar"><a href="#">{{item}}</a></li>
             </ul>
         </div>
     </section>
 </template>
 <style lang="scss" scoped >
-section{
+section {
     display: flex;
     align-items: center;
-    width: 100%;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
 
-    img{
+    img {
         padding: 10px 0;
-    }
-    
-    .logo{
-        width: 40%;
-        display: flex;
-        justify-content: center;
+        width: 80%;
     }
 
-    .lista{
-        width: 60%;
-    }
-
-    .lista ul{
+    .lista ul {
         display: flex;
         list-style: none;
 
     }
 
-    .lista ul li{
+    .lista ul li {
         padding: 10px;
     }
 
-    a{
+    a {
         text-decoration: none;
         color: black;
         font-size: 17px;
     }
 
-    a:hover{
+    a:hover {
         color: blue;
     }
 }

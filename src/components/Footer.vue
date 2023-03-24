@@ -21,5 +21,5 @@ export default {
     <FooterInfo />
     <FooterSocial />
 </template>
-<style scoped>
+<style lang="scss" scoped>
 </style>

@@ -9,27 +9,34 @@ export default {
 
 </script>
 <template>
-    <div>
-        <ul>
-            <li>Digital Comics<img src="../assets/buy-comics-digital-comics.png" alt="logo"></li>
-            <li>Digital Comics<img src="../assets/buy-comics-digital-comics.png" alt="logo"></li>
-            <li>Digital Comics<img src="../assets/buy-comics-digital-comics.png" alt="logo"></li>
-            <li>Digital Comics<img src="../assets/buy-comics-digital-comics.png" alt="logo"></li>
-            <li>Digital Comics<img src="../assets/buy-comics-digital-comics.png" alt="logo"></li>
-
-        </ul>
-    </div>
+    <section>
+        <div class="container">
+            <ul>
+                <li><img src="../assets/buy-comics-digital-comics.png" alt="logo">Digital Comics</li>
+                <li><img src="../assets/buy-comics-digital-comics.png" alt="logo">Digital Comics</li>
+                <li><img src="../assets/buy-comics-digital-comics.png" alt="logo">Digital Comics</li>
+                <li><img src="../assets/buy-comics-digital-comics.png" alt="logo">Digital Comics</li>
+                <li><img src="../assets/buy-comics-digital-comics.png" alt="logo">Digital Comics</li>
+            </ul>
+        </div>
+    </section>
 </template>
 <style lang="scss" scoped >
-div {
+section {
     background-color: #0282f9;
 
-    div ul {
-        display: flex;
-        justify-content: center;
+    .container{
+        max-width: 1300px;
+        margin: auto;
     }
 
-    div li {
+    .container ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    .container ul li {
         display: flex;
         align-items: center;
         list-style: none;
