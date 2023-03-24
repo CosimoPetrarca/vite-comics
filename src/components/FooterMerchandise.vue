@@ -2,21 +2,45 @@
 export default {
     data() {
         return {
-            name: 'FooterMarchandise'
+            name: 'FooterMarchandise',
+            icons: [
+                {
+                    text: "DIGITAL COMICS",
+                    img: "../assets/buy_1.png"
+
+                },
+                {
+                    text: "DC MERCHANDISE",
+                    img: "../assets/buy-comics-merchandise.png"
+
+                },
+                {
+                    text: "SUBSCRIPTION",
+                    img: "../assets/buy-comics-subscriptions.png"
+
+                },
+                {
+                    text: "COMIC SHOP LOCATOR",
+                    img: "../assets/buy-comics-shop-locator.png"
+
+                },
+                {
+                    text: "DC POWER VISA",
+                    img: "../assets/buy-dc-power-visa.svg"
+
+                }
+            ]
         }
     }
 }
+    
 
 </script>
 <template>
     <section>
         <div class="container">
             <ul>
-                <li><img src="../assets/buy-comics-digital-comics.png" alt="logo">Digital Comics</li>
-                <li><img src="../assets/buy-comics-digital-comics.png" alt="logo">Digital Comics</li>
-                <li><img src="../assets/buy-comics-digital-comics.png" alt="logo">Digital Comics</li>
-                <li><img src="../assets/buy-comics-digital-comics.png" alt="logo">Digital Comics</li>
-                <li><img src="../assets/buy-comics-digital-comics.png" alt="logo">Digital Comics</li>
+                <li v-for="icon in icons"><img :src="icon['img']" >{{ icon.text }}</li>
             </ul>
         </div>
     </section>
@@ -25,7 +49,7 @@ export default {
 section {
     background-color: #0282f9;
 
-    .container{
+    .container {
         max-width: 1300px;
         margin: auto;
     }
