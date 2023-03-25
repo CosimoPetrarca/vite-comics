@@ -10,14 +10,17 @@ export default {
 <template>
     <section>
         <div class="container">
-            <h2>Content goes here</h2>
+    
         </div>
     </section>
 </template>
 <style lang="scss" scoped >
 section {
-    background-color: #1c1c1c;
-    height: 130px; //debug
+    background-image: url(../assets/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    
 
     .container{
         max-width: 1300px;
