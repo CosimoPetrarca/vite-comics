@@ -52,6 +52,8 @@ section {
     .container {
         max-width: 1300px;
         margin: auto;
+        position: relative;
+        z-index: 1;
     }
 
     .container ul {

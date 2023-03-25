@@ -48,6 +48,7 @@ export default {
 <style lang="scss" scoped >
 section {
     background-color: #303030;
+    position: relative;
 
     .container{
         display: flex;

@@ -104,7 +104,10 @@ section {
     .logo {
         display: flex;
         justify-content: end;
-        width: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translateY(+10%);
     }
 
     h4 {
@@ -112,12 +115,12 @@ section {
         padding-bottom: 20px;
     }
 
-    li{
+    li {
         list-style: none;
         padding-bottom: 5px;
     }
 
-    a{
+    a {
         color: gray;
         text-decoration: none;
     }
@@ -125,6 +128,7 @@ section {
     .uno {
         padding-top: 20px;
     }
+
 
 }
 </style>
