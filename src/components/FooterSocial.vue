@@ -39,6 +39,7 @@ export default {
                 <h4>FOLLOW US</h4>
                 <ul v-for="social in socials">
                     <li><img :src= social.image></li>
+                    
                    
                 </ul>
             </div>
@@ -67,6 +68,10 @@ section {
         cursor: pointer;
     }
 
+    button:hover{
+        background-color: #0282f9;
+    }
+
     .btn,
     .social {
         width: 50%;
@@ -80,7 +85,8 @@ section {
 
     .social h4 {
         color: #0282f9;
-        font-size: 20px;
+        font-size: 17px;
+        padding-right: 10px;
     }
 
     .social ul {
@@ -90,7 +96,6 @@ section {
     }
 
     .social ul li {
-        padding-right: 20px;
         color: grey;
     }
 }

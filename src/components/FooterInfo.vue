@@ -121,8 +121,12 @@ section {
     }
 
     a {
-        color: gray;
+        color: #959595;
         text-decoration: none;
+    }
+
+    a:hover {
+        color: #0282f9;
     }
 
     .uno {

@@ -9,76 +9,53 @@ export default {
         return {
             locandine: [
                 {
-                    "thumb": "https://static.dc.com/2023-03/LEGIONOB_Cv1_00111_DIGITAL.jpg?w=640",
-                    "price": "$19.99",
-                    "series": "DC'S LEGION OF BLOOM",
-                    "type": "comic book"
-                },
-                {
-                    "thumb": "https://static.dc.com/2023-03/FLS_Cv795_79511_DIGITAL.jpg?w=640",
-                    "price": "$3.99",
-                    "series": "THE FLASH",
-                    "type": "comic book"
-                },
-                {
-                    "thumb": "https://static.dc.com/2023-03/NTW_Cv102_10211_DIGITAL-1.jpg?w=640",
-                    "price": "$16.99",
-                    "series": "NIGHTWING",
-                    "type": "graphic novel"
-                },
-                {
-                    "thumb": "https://static.dc.com/2023-03/BMSMWF_Cv13_01311_DIGITAL.jpg?w=640",
-                    "price": "$2.99",
-                    "series": "BATMAN/SUPERMAN: WORLD'S FINEST",
-                    "type": "comic book"
-                },
-                {
-                    "thumb": "https://static.dc.com/2023-03/CTW_Cv53_05311_DIGITAL.jpg?w=640",
-                    "price": "$3.99",
-                    "series": "CATWOMAN",
-                    "type": "comic book"
-                },
-                {
-                    "thumb": "https://static.dc.com/2023-03/BA_Cv9_00911_DIGITAL.jpg?w=640",
-                    "price": "$2.99",
+                    "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/M/1/M1HCIN068ISBN_0.jpg",
                     "series": "BLACK ADAM",
-                    "type": "comic book"
                 },
                 {
-                    "thumb": "https://static.dc.com/2023-03/SM_LOST_Cv1_00111_DIGITAL.jpg?w=640",
-                    "price": "$3.99",
-                    "series": "SUPERMAN: LOST",
-                    "type": "comic book"
+                    "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/M/1/M1FLAS032ISBN_0.jpg",
+                    "series": "THE FLASH",
                 },
                 {
-                    "thumb": "https://static.dc.com/2023-03/SUPES_Cv2_00211_DIGITAL.jpg?w=640",
-                    "price": "$4.99",
+                    "thumb": "https://static.dc.com/dc/files/default_images/teentitansgo_s1_thumb_192x291_52abc1c8962e81.49398578.jpg?w=192",
+                    "series": "TEEN TITANS GO!",
+                },
+                {
+                    "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/M/1/M1DLUX023ISBN_0.jpg",
+                    "series": "AQUAMAN: LE CRONACHE DI ATLANTIDE",
+                },
+                {
+                    "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/M/1/M1HCIN061ISBN_0.jpg",
+                    "series": "SUICIDE SQUAD",
+                },
+                {
+                    "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/m/1/m1dceg019isbn_0.jpg",
+                    "series": "LANTERNA VERDE",
+                },
+                {
+                    "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/M/1/M1DCEG050ISBN_0.jpg",
+                    "series": "CATWOMAN",
+                },
+                {
+                    "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/M/1/M1REHC042ISBN_0.jpg",
                     "series": "SUPERMAN",
-                    "type": "comic book"
                 },
                 {
-                    "thumb": "https://static.dc.com/2023-03/ROBIN_v3%20%28Cover%29.jpg?w=640",
-                    "price": "$5.99",
-                    "series": "ROBIN VOL. 3: SECRETS AND SHADOWS ",
-                    "type": "comic book"
+                    "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/M/1/M1VEMH057ISBN_0.jpg",
+                    "series": "LUCIFER: INFERNO ",
                 },
                 {
-                    "thumb": "https://static.dc.com/2023-03/HQv3%20%28%20Cover%29.jpg?w=640",
-                    "price": "$6.99",
-                    "series": "HARLEY QUINN VOL. 3: VERDICT",
-                    "type": "comic book"
+                    "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/M/1/M1ANNI009ISBN_0.jpg",
+                    "series": "HARLEY QUINN ",
                 },
                 {
-                    "thumb": "https://static.dc.com/2023-03/MULTVTJ%20%28COVER%29.jpg?w=640",
-                    "price": "$4.99",
-                    "series": "MULTIVERSITY: TEEN JUSTICE",
-                    "type": "comic book"
+                    "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/m/1/m1batm068isbnv1_0.jpg",
+                    "series": "BATMAN",
+
                 },
                 {
-                    "thumb": "https://static.dc.com/2023-03/WW_Cv797_79711_DIGITAL.jpg?w=640",
-                    "price": "$16.99",
+                    "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/M/1/M1HCIN064ISBN_0.jpg",
                     "series": "WONDER WOMAN",
-                    "type": "graphic novel"
                 }
             ]
         }
@@ -89,11 +66,18 @@ export default {
     <div class="jumbo">
     </div>
     <section>
+        <div class="btn-top">
+            <button><h3>CURRENT SERIES</h3></button>
+        </div>
         <div class="locandine">
             <CardElement v-for="(locandina, index) in locandine" :key="index" :img="locandina.thumb"
                 :title="locandina.series">
             </CardElement>
         </div>
+        <div class="btn-bottom">
+            <button>LOAD MORE</button>
+        </div>
+
 
     </section>
 </template>
@@ -103,11 +87,13 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
+    position: relative;
 }
 
 section {
     background-color: #1c1c1c;
-    
+    position: relative;
+
 
     .locandine {
         display: flex;
@@ -116,7 +102,34 @@ section {
         max-width: 1300px;
         margin: auto;
         padding: 50px 0;
-        
     }
+
+    .btn-bottom {
+        padding: 20px;
+    }
+
+    .btn-top {
+        position: absolute;
+        left: 300px;
+        top: -20px;
+    }
+
+    button {
+        display: flex;
+        margin: auto;
+        padding: 10px 50px;
+        background-color: #0282f9;
+        border: none;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+    }
+
+    button:hover {
+        transform: scale(1.1);
+    }
+
+
 }
 </style>

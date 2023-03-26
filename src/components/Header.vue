@@ -48,7 +48,6 @@ section {
     .lista ul {
         display: flex;
         list-style: none;
-
     }
 
     .lista ul li {
@@ -62,7 +61,9 @@ section {
     }
 
     a:hover {
-        color: blue;
+        color: #0282f9;
+        border-bottom: 3px solid #0282f9;
     }
+    
 }
 </style>
