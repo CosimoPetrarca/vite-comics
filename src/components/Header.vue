@@ -1,6 +1,6 @@
 <script>
 export default {
-    
+
     data() {
         return {
             name: 'Header',
@@ -23,22 +23,33 @@ export default {
 <template>
     <!-- logo -->
     <section>
-        <div class="logo"><img src="../assets/dc-logo.png" alt="logo"></div>
-        <div class="lista">
-            <!-- lista header -->
-            <ul>
-                <li v-for="item in navbar"><a href="#">{{item}}</a></li>
-            </ul>
+        <div class="container">
+            <div class="logo"><img src="../assets/dc-logo.png" alt="logo"></div>
+            <div class="lista">
+                <!-- lista header -->
+                <ul>
+                    <li v-for="item in navbar"><a href="#">{{ item }}</a></li>
+                </ul>
+            </div>
         </div>
     </section>
 </template>
 <style lang="scss" scoped >
 section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1300px;
-    margin: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    background-color: white;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1300px;
+        margin: auto;
+    }
 
     img {
         padding: 10px 0;
@@ -64,6 +75,6 @@ section {
         color: #0282f9;
         border-bottom: 3px solid #0282f9;
     }
-    
+
 }
 </style>
