@@ -41,8 +41,8 @@ export default {
                     "series": "SUPERMAN",
                 },
                 {
-                    "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/M/1/M1VEMH057ISBN_0.jpg",
-                    "series": "LUCIFER: INFERNO ",
+                    "thumb": "https://www.striscialanotizia.mediaset.it/wp-content/uploads/2022/09/ventosa.jpg",
+                    "series": "CAPITAN VENTOSA",
                 },
                 {
                     "thumb": "https://www.panini.it/media/catalog/product/cache/dcdcea88706ab1684584701c5b27598d/M/1/M1ANNI009ISBN_0.jpg",
