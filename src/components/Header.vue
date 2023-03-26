@@ -28,7 +28,7 @@ export default {
             <div class="lista">
                 <!-- lista header -->
                 <ul>
-                    <li v-for="item in navbar"><a href="#">{{ item }}</a></li>
+                    <li v-for="item in navbar"><strong><a href="#">{{ item }}</a></strong></li>
                 </ul>
             </div>
         </div>
@@ -62,14 +62,15 @@ section {
     }
 
     .lista ul li {
-        padding: 10px;
+        padding: 15px;
     }
 
     a {
         text-decoration: none;
-        color: black;
-        font-size: 17px;
-        padding-bottom: 39px;
+        color: #464646;
+        font-size: 15px;
+        padding-bottom: 40px;
+        text-transform: uppercase;
     }
 
     a:hover {

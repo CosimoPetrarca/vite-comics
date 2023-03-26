@@ -33,7 +33,7 @@ export default {
     <section>
         <div class="container">
             <div class="btn">
-                <button>Sign-Up Now!</button>
+                <button>SIGN-UP NOW!</button>
             </div>
             <div class="social">
                 <h4>FOLLOW US</h4>
