@@ -69,12 +69,12 @@ section {
         text-decoration: none;
         color: black;
         font-size: 17px;
+        padding-bottom: 39px;
     }
 
     a:hover {
         color: #0282f9;
         border-bottom: 3px solid #0282f9;
     }
-
 }
 </style>

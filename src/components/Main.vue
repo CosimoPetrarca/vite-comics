@@ -77,8 +77,6 @@ export default {
         <div class="btn-bottom">
             <button>LOAD MORE</button>
         </div>
-
-
     </section>
 </template>
 <style lang="scss" scoped >
@@ -129,7 +127,5 @@ section {
     button:hover {
         transform: scale(1.1);
     }
-
-
 }
 </style>
