@@ -38,9 +38,7 @@ export default {
             <div class="social">
                 <h4>FOLLOW US</h4>
                 <ul v-for="social in socials">
-                    <li><img :src= social.image></li>
-                    
-                   
+                    <li><a href="#"><img :src= social.image></a></li>
                 </ul>
             </div>
         </div>

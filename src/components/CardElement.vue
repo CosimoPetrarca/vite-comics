@@ -22,7 +22,7 @@ export default {
 
 img{
     width: 190px;
-    height: 190px;
+    height: 220px;
     transition: all 0.3s ease-out;
     cursor: pointer;
 }

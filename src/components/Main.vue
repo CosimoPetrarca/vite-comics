@@ -75,7 +75,7 @@ export default {
             </CardElement>
         </div>
         <div class="btn-bottom">
-            <button>LOAD MORE</button>
+            <button><h4>LOAD MORE</h4></button>
         </div>
     </section>
 </template>
