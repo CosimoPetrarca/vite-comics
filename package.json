@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/ibm-plex-sans-condensed": "^4.5.11",
     "@fontsource/montserrat": "^4.5.14",
     "vue": "^3.2.47"
   },

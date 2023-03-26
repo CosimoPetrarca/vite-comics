@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import "@fontsource/montserrat";
+import "@fontsource/ibm-plex-sans-condensed";
 import './style.css'
 import App from './App.vue'
 
